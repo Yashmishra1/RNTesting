@@ -7,14 +7,11 @@ import { Text, View } from 'react-native';
 
 const App = () => {
   return (
-    // <Provider store={store}>
-    //   <PersistGate loading={null} persistor={persistor}>
-    //     <Navigation />
-    //   </PersistGate>
-    // </Provider>
-    <View>
-      <Text>I have changed</Text>
-    </View>
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <Navigation />
+      </PersistGate>
+    </Provider>
   );
 };
 
